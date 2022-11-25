@@ -1,0 +1,535 @@
+
+@font-face {
+    font-family: 'BebasNeueBold';
+    src: url('../fonts/bebasneue/bebasneuebold.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'BebasNeueBold';
+}
+
+.tp-caption h1 {
+    font-size: 73px;
+    margin-bottom: 0 !important;
+}
+
+.tp-caption h2 {
+    font-size: 46px;
+    margin-bottom: 0 !important;
+}
+
+/* ---=======================
+--- > Header
+   ==========================--- */
+
+.bg-bottom {
+    width: 104%;
+    position: absolute;
+    bottom: 0;
+    z-index: 9999;
+    left: -4%;
+}
+
+.tp-caption h2 {
+    color: white;
+}
+
+.n1 {
+    background-color: rgba(0, 0, 0, 0.63);
+}
+
+.navbar-brand {
+    color: #ffffff !important;
+    font: 700 36px Montserrat, arial;
+}
+
+.navbar-nav li a {
+    color: #ffffff !important;
+    position: relative
+}
+
+.navbar-nav li > a.active:before {
+    position: absolute;
+    content: '';
+    border-right: 30px solid transparent;
+    border-top: 30px solid transparent;
+    border-left: 30px solid transparent;
+    border-bottom: 45px solid #EBCF29;
+    bottom: -60px;
+    left: -10px;
+}
+
+.navbar-nav li:hover > a:before {
+    position: absolute;
+    content: '';
+    border-right: 30px solid transparent;
+    border-top: 30px solid transparent;
+    border-left: 30px solid transparent;
+    border-bottom: 45px solid #EBCF29;
+    bottom: -60px;
+    left: -10px;
+}
+
+header {
+    background: url(../img/bg-header.png) center no-repeat;
+    background-size: cover;
+    height: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+header h1,
+header p {
+    color: #ffffff;
+}
+
+header h1 span {
+    color: #2ebaee;
+}
+
+.col-centrar {
+    margin: 0 auto;
+    float: none;
+}
+
+.boton {
+    background-color: #2ebaee;
+    color: #ffffff;
+    font: 700 18px Montserrat, arial;
+}
+
+.nav-link {
+    margin-right: 13px;
+    font-size: .9rem
+}
+
+#home {
+    position: relative;
+    z-index: 1;
+}
+
+/* ---=======================
+--- > Nuestras Clases
+   ==========================--- */
+
+#clases {
+    position: relative;
+    z-index: 1;
+    background: url(../img/bg-clases.png) 75% 30% no-repeat, url(../img/bg-fondo-class.jpg) center bottom no-repeat;
+    background-size: 750px, 100%;
+    padding-bottom: 200px;
+}
+
+.bg-top {
+    position: absolute;
+    top: -100px;
+    left: 0px;
+}
+
+section#clases .title {
+    position: relative;
+}
+
+#clases h1 {
+    color: #242424;
+    font-size: 48px;
+}
+
+#clases h1:before {
+    position: absolute;
+    content: '';
+    border-right: 30px solid transparent;
+    border-top: 30px solid transparent;
+    border-left: 30px solid #FF4E00;
+    border-bottom: 35px solid transparent;
+    top: -10px;
+    left: -20px;
+}
+
+#clases h2 {
+    margin-top: -20px;
+    color: #FF4E00;
+}
+
+/* ---=======================
+--- > Galeria
+   ==========================--- */
+
+
+#galeria {
+    padding: 90px 0;
+    background: #161616;
+}
+
+#galeria .titulo h1 {
+    font-weight: bold;
+    color: white;
+}
+
+#galeria .titulo h2 {
+    color: white;
+    margin-top: -20px;
+}
+
+#galeria .content {
+    list-style: none;    
+}
+
+#galeria .content img {
+    width: 100%;
+    padding: 10px;
+}
+
+#galeria ul {
+    padding: 0
+}
+
+#galeria ul li {
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+#galeria ul li[class^=col-] {
+    padding: 0;
+}
+
+#galeria ul li > .zoom-img {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 78, 0, 0.6);
+    position: absolute;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    -webkit-transition: .5s all;
+    transition: .5s all
+}
+
+#galeria ul li:hover > .zoom-img {    /* #FF4E00 - #161616 */    
+    -webkit-transform: scale(1);
+            transform: scale(1);
+}
+
+#galeria ul li .zoom-img i {
+    font-size: 30px;
+    color: white;
+    padding: 17px 20px;
+    border-radius: 50%;
+    background-color: #161616;
+}
+
+/* ---=======================
+--- > Horario
+   ==========================--- */
+
+section#horario {
+    background: #FF4E00 url( ../img/bg-horario.jpg ) center top no-repeat;
+    padding: 140px 0 0 0
+}
+
+section#horario h1 {
+    color: white;    
+}
+
+section#horario .title {
+    position: relative;
+}
+
+section#horario h1:before {
+    position: absolute;
+    content: '';
+    border-right: 30px solid transparent;
+    border-top: 30px solid transparent;
+    border-left: 30px solid #161616;
+    border-bottom: 35px solid transparent;
+    top: -15px;
+    left: -20px;
+}
+
+section#horario .tabla {
+    overflow: auto;
+}
+
+section#horario table th,
+section#horario table td,
+section#horario p {
+    color: white;
+    text-align: center;
+}
+
+/* ---=======================
+--- > redes
+   ==========================--- */
+
+section#redes {
+    background: url( ../img/bg-redes.jpg ) center top no-repeat;
+    padding: 140px 0 80px 0
+}
+
+section#redes .title {
+    position: relative;
+}
+
+section#redes h2 {
+    color: #FF4E00;
+    margin-top: -19px
+}
+
+section#redes .title h1:before {
+    position: absolute;
+    content: '';
+    border-right: 30px solid transparent;
+    border-top: 30px solid transparent;
+    border-left: 30px solid #161616;
+    border-bottom: 35px solid transparent;
+    top: -10px;
+    left: 60px;
+}
+
+
+/* ---=======================
+--- > Formulario
+   ==========================--- */
+
+form input.form-control,
+textarea.form-control,
+select.form-control {
+    background: transparent;
+    border-color: #777777
+}
+
+::-webkit-input-placeholder {
+    color: #d88a0d !important;
+}
+
+::-moz-input-placeholder {
+    color: #e79c12 !important;
+}
+
+::-ms-input-placeholder {
+    color: #dc821b !important;
+}
+
+
+/* ---=======================
+--- > Footer
+   ==========================--- */
+
+footer {
+    background: url(../img/bg-footer-white.png) center top no-repeat, url(../img/bg-footer.png) center no-repeat;
+    padding: 120px 0;
+}
+
+
+input,
+textarea {
+    padding-left: 20px !important;
+    border-radius: 0 !important;
+    border-color: #ce6b00 !important;
+}
+
+textarea {
+    background-color: #ff4f00 !important;
+    color: white !important;
+}
+
+footer p {
+    color: black;
+    margin-bottom: 50px
+}
+
+footer .title {
+    position: relative;
+}
+
+footer .title h1:before {
+    position: absolute;
+    content: '';
+    border-right: 30px solid #EBCF29;
+    border-top: 22px solid transparent;
+    border-left: 30px solid transparent;
+    border-bottom: 39px solid transparent;
+    top: -5px;
+    right: -35px;
+}
+
+#form button {
+    border-radius: 0 !important;
+    background-color: #ff4f00;
+    border: 1px solid #ff4f00;
+    -webkit-transition: .4s all;
+    transition: .4s all;
+    padding: 8px 20px
+}
+
+#form button:hover {
+    background-color: white;
+    color: #ff4f00
+}
+
+.caja .listado {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.listado ul li {
+    padding: 5px;
+    color: #ffffff;
+    font: 400 18px Calibri;
+}
+
+.caja {
+    margin-top: 30px;
+}
+
+input::-webkit-input-placeholder {
+    color: black !important;
+}
+
+
+input::-moz-input-placeholder {
+    color: black !important;
+}
+
+
+input::-ms-input-placeholder {
+    color: black !important;
+}
+
+
+/* ---=======================
+--- > @media queries
+   ==========================--- */
+
+@media (min-width: 544px) {
+    .navbar-toggleable-xs {
+        display: -webkit-box !important;
+        display: -webkit-flex !important;
+        display: -ms-flexbox !important;
+        display: flex !important;
+        -webkit-justify-content: space-around;
+            -ms-flex-pack: distribute;
+                justify-content: space-around;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+    }
+}
+
+@media screen and ( max-width: 767px ) {
+    .listado ul li {
+        font-size: 15px;
+    }
+    section#horario h1:before {
+        left: 30px
+    }
+    footer .title h1:before {
+        right: 170px;
+    }
+    .navbar-nav .nav-item+.nav-item {
+        margin-left: 0;
+    }
+    ul.navbar-nav {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .navbar-nav li > a.active:before {
+        position: absolute;
+        content: '';
+        border-right: 17px solid #EBCF29;
+        border-top: 10px solid transparent;
+        border-left: 10px solid transparent;
+        border-bottom: 13px solid transparent;
+        bottom: 4px;
+        left: 50px;
+    }
+    .navbar-nav li:hover > a:before {
+        position: absolute;
+        content: '';
+        border-right: 17px solid #EBCF29;
+        border-top: 10px solid transparent;
+        border-left: 10px solid transparent;
+        border-bottom: 13px solid transparent;
+        bottom: 4px;
+        left: 70px;
+    }
+}
+
+@media screen and ( max-width: 554px ) {
+    .display-3 {
+        font-size: 3.5rem !important;
+    }
+    
+    .listado ul li {
+        font-size: 12px;
+    }
+    footer .title h1:before {
+        right: 70px;
+    }
+    #clases .pull-right {
+        float: none
+    }
+    #clases h1:before {
+        left: 80px
+    }
+}
+
+
+
+
+
+
+
+
+
